@@ -1,0 +1,40 @@
+.AllPageBannerImg {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+  }
+  
+  .AllPageBannerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  }
+
+  .banner-textt {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  }
+  

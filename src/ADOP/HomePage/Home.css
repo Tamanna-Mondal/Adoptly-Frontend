@@ -1,0 +1,68 @@
+.animal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2% 10%;
+    gap: 16px;
+    margin: 0;
+}
+
+.animal-card {
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-shadow: 3px 1px 10px #3B1C32;
+    border-radius: 4px;
+    background-color: #f6e4f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.animal-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 6px 4px 15px #3B1C32; 
+}
+.animal-card:hover img {
+    transform: scale(1.1); 
+}
+.animal-card i, p,  a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #3B1C32;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.animal-card p {
+    margin: 0;
+}
+
+.animal-card img {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out; 
+}
+
+@media (max-width: 768px) {
+    .animal {
+        padding: 0 10%;
+    }
+
+    .animal-card {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .animal {
+        padding: 0 5%;
+    }
+
+    .animal-card {
+        width: 100%; 
+    }
+}

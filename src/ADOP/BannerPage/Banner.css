@@ -1,0 +1,111 @@
+.video-slider {
+  padding-top: 1px;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  height: 100%;
+  width: 1000vw; 
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.video-slide {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 20;
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 30;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+  background: white;
+  transform: scale(1.3);
+}
+
+.bannerText-logo {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: absolute;
+  top:90%;
+  right:-1%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  z-index: 30;
+}
+
+.bannerText {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: absolute;
+  top: 50%;
+  left:16%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  z-index: 30;
+  font-size: 2rem;
+  font-weight: 600;
+}
